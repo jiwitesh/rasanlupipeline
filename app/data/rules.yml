@@ -1,0 +1,10 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: STATUS_BUSY
+  - action: utter_goodbye
+
+

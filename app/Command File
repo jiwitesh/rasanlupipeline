@@ -1,0 +1,11 @@
+>rasa test nlu    --nlu train_test_split/test_data.yml
+
+
+
+
+rasa test nlu   --nlu data/nlu.yml   --cross-validation
+
+
+
+
+rasa test nlu --cross-validation

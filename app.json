@@ -1,0 +1,7 @@
+{
+  "name": "nlpintenttest",
+  "description": "ML Approach For Intent Testing",
+  "repository": "https://github.com/jiwitesh/rasanlu",
+  "logo": "https://s3-us-west-2.amazonaws.com/spaceocanadawp/2019/12/rasa-framework.png",
+  "stack": "container"
+}

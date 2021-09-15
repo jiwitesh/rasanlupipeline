@@ -1,0 +1,10 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: MILEAGE_NOT_KNOWN
+  - action: utter_greet
+  - intent: SPECIFY_MILEAGE
+  - action: utter_happy

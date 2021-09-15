@@ -1,0 +1,1150 @@
+version: "2.0"
+
+nlu:
+- intent: MILEAGE_NOT_KNOWN
+  examples: |
+    - I don’t know the mileage
+    - I need to find out the exact miles on my vehicle.
+    - I dont remember how many miles I have
+    - I dont have the miles with me right now
+    - i dont have the mileage with me
+    - I need to find out the mileage
+    - I dont have it handy.
+    - have already exceeded that many miles
+
+- intent: SPECIFY_MILEAGE
+  examples: |
+    - Kelly, My vehicle is at 26100 miles.
+    - It might be around 400 miles
+    - I might be at 40000 right now.
+    - My vehicle has  10000 miles on it
+    - I'm half way to the 5000m oil change mark.
+    - the truck has close to 25,000 miles on it
+    - our odometer is now at 6056 miles.
+    - Car has 8,200 miles on
+    - I have 5600 miles on it
+    - I'm at 9,600
+    - The truck has about 8500 miles.
+    - I already drove 45k
+    - The total mileage is 3435 as of today
+    - I have 2000 miles on the car.
+    - Yes Ana, we have only 1739 miles on Toyota.
+    - I had already hit 5K on it
+    - I just turned 4000 miles this morning.
+    - another reading with a little wrench logo says 6857 miles
+    - I had a lot of miles
+    - It is about 2000 miles now
+    - Ok the car has 1300
+    - My car is under 3000 miles
+    - Well I am almost at the 10000 miles do next week
+    - I work from home the mileage less 600
+    - I just completed the 5000 back in in Clovis NM
+    - It is 650 miles
+    - i-was-told to come-back at 10000 miles
+    - Currently odometer is 10000
+    - Yes current miles 26308
+    - My car is still at 1000 due-to me working from home
+    - I am actually over 5K now
+    - Had the oil changed at 3000 miles
+    - Yes you can I am over 4000
+    - The current mileage is approximate 40K
+    - My mileage is 6338 right-now
+    - My car is 3000 plus
+    - Ok is near 4K
+    - have 7000 guesstimate mileage
+    - I just hit 5000 on my truck this week
+    - I just passed 4000 miles last week
+    - I have almost 42000 on it
+    - I only have 7500 miles not quite
+    - Just turned 6000 miles
+    - If I reach 5000 miles before 6 months,
+    - and the truck had 42 miles.
+
+- intent: OBJECT_LESS_MILEAGE
+  examples: |
+    - Only 1,000 miles
+    - Yes. I only have 1600 miles on it.
+    - I am only at 8500 miles.
+    - I'm at 22000 miles so
+    - Currently my Camry has under 4K miles.
+    - It's still under 5k as of now.
+    - It ONLY has 400 miles.
+    - But my mileage is still pretty low.
+    - Because of COVID-19, the mileage of the car is so low, less than 500 miles.
+    - coz the mileage right now its only 4,200,
+    - I have not hit 10k
+    - My vehicle isn't at 5k miles yet,
+    - They said my vehicle mileage is only 4000
+    - they said my vehicle only has 4000
+    - and dont expect to exceed 5k before then
+    - It doesn't have 1000 miles yet.
+    - I think I'm over 5K miles,
+    - But I am still far from 5,000 miles.
+    - I am not at 5k yet
+    - I dont think our mileage gets to 5k yet
+    - I hit 5000 miles
+    - I don't have many miles on the car,  therefore I wouldn't think I need an oil change right now
+    - I will come for 10k
+    - My vehicle only have 3092
+    - I got about 800 hundred miles to go
+    - I have very low mileage
+    - I have less than 2k miles on it
+    - I dont have 5000 miles yet
+    - hello I haven't reached the miles yet
+    - I am only around 1500 miles
+    - I have less miles than that
+    - My miles now 30.000
+    - there's only 8000 miles on the truck
+    - Ok not at 5000 yet
+    - I am closer to 2500
+    - I am not close-to the 5K
+    - Hello Ana My  car only has 3000 on it
+    - it only has 4000
+    - the mileage of the car is low LT 500 miles
+    - Was told to come-back for it when It is 10000
+    - will add about 1500 miles then
+    - The current mileage is below 3300
+    - No while only at 6500 miles
+    - I do not have 10K yet
+    - I just crossed 5K
+    - It is around 4900
+    - I have not put 5K miles on the car yet
+    - It is not due until 10000
+    - SYM-EOS almost at 5K miles 2020 ya' know
+    - I havent hit the mileage yet for my next servicing
+    - I'm about to hit 16000
+    - I barely have 3000 yet due-to working been working from home
+    - We only have 2000 miles
+    - when I reach 5K miles
+    - Car only has 2300 miles on it right now
+    - when I get closer to 5000 miles
+    - It has only little over 2000 miles
+    - will be serviced soon for the 15k.
+    - I’m about to take it in for the 15,000.
+    - car has made about 3.5 k,
+    - Well the car is at 2,400 miles
+    - I don't need my 10,000 mile on my 2021.
+    - I'll make when when I near the 10,000 mile marker.
+    - It hasn't reached 5K maintenance yet.
+    - It's only 1k mile right
+    - I was hoping that when it's become a 5k mile
+    - We are already at 7k
+
+- intent: SCHEDULED_APPT
+  examples: |
+    - I have already setup an appointment
+    - My appointment was already scheduled
+    - My appointment is scheduled already for 5 pm
+    - I already have a service appt
+    - I already have an appt for my oil change
+    - I did schedule a service.
+    - Yes. I have a service appointment on March 16.
+    - I already scheduled my service
+    - I have scheduled my service
+    - I thought I had one scheduled already
+    - I actually set that up for April 5th
+    - I have appointment set up this Monday 3/15.
+    - Appointment scheduled on March 25th @ 3pm
+    - I have already scheduled my appointment last week
+    - I'm so sorry I forgot I had a commitment on Monday.
+    - I scheduled the appointment yesterday afternoon.
+    - I have appointment today 4 30pm also because
+    - I scheduled it for tomorrow afternoon.
+    - I have an oilchange scheduled for 10k
+    - I scheduled an appointment online for 2:30 tomorrow
+    - I'm already on schedule for the 2nd maintenance in July 2021
+    - I actually have an appointment today
+    - It's already scheduled for Monday
+    - I booked an appointment at Maita Toyota
+    - I have an appointment may 12th at 11:00
+    - I have already scheduled my 5k service
+    - We already have a schedule thank you
+    - I already have it scheduled
+    - I think it's already scheduled
+    - I scheduled it myself thru the Toyota app a few months ago actually ma'am
+    - I was not aware that I had scheduled maintenance
+    - So that's why I made the appointment
+    - I am scheduled for my maintenance
+    - I scheduled an appointment in LA
+    - I am already scheduled
+    - I  want-to keep the July appt
+    - I am scheduled for a complimentary service on July 10th
+    - It said my appointment is set for 7:00am tomorrow
+    - Next is scheduled for August
+    - I believe I have an appt on Aug 27
+    - I booked it with you this morning for next Thursday
+    - Appointment has been made
+    - Already have appointment July 14
+    - I have another one scheduled for this coming Saturday
+    - scheduled it myself
+    - I have an apt scheduled for monday 1pm
+    - We have an appointment on Friday morning to get the tint,wheel locks, nitrogen
+    - Oh i called already it was set up for today at 1pm
+
+- intent: PERFORM_SERVICE
+  examples: |
+    - Yes. I don't think I need an oil change specifically yet, as
+    - get the oil changed
+    - Should I change the oil anyway?
+    - i will be getting it serviced
+    - I want/would-like to get it serviced at
+    - I just want to get my 5K Service done by this saturday
+    - I would like to get my oil change done
+    - I would like to get it serviced at
+    - can I get this done still after 5 on weekdays?
+    - Make sure they will do this time even it's below 5000 mileage yet. Thank you.
+    - I want change my rear back tire
+    - And we need to schedule the first service.
+    - it's good to get it done now
+    - I would like to bring my 2021 Venza in for service next Tuesday
+    - The only thing that's needed refill is windshield cleaner
+    - Is it need to have oil change
+    - I understand I need to do the maintenance
+    - is it possible to have it done around 1st of June
+    - I’ve been getting it serviced
+    - They told me to come BK to get the oil changed at 10k
+    - I'm about to go in for a 10k this coming Monday
+    - Yes I need it serviced
+    - We will be servicing locally in Warner Robins.
+    - can you change the oil?
+    - there are a-few surface scratches I would like buffed out
+    - It is displayed need maintenance
+    - can-you do the service on the weekend
+    - the change oil for my Highlander
+    - Yes, I'd like to get the 10k service done.
+    - and clear bra coating that were part of the package?
+    - I have not gotten my 5k-service yet - with covid it slipped my mind
+    - I have not had the 5K-service done yet just passed 5K last week need-to schedule soon
+    - I just started getting the 10K service notice
+    - me due for inspection next month
+    - Sure I have a sticker on the windshield that says next-service July 15th
+    - My next-service date is July 12
+    - Can i have that looked at next week?
+    - I would like to get it serviced
+    - Yes i want to perform my service
+    - My service is due
+
+- intent: PERFORMED_SERVICE
+  examples: |
+    - I just did my first check up on 03/03 and did an oil change at your location. Thanks for the reminder however.
+    - They rotated my tires and
+    - Serviced in January
+    - I just had my first service last weekend
+    - I just did my first check up on 03/03
+    - did an oil change at your location.
+    - I perform the oil changes myself
+    - I already got my oil changed
+    - I got it done yesterday
+    - I got my oil change last week
+    - I had it done in the 20th
+    - Sure. I did use the complementary 3mos systems check or something.
+    - Hi Ana, I already went to my first inspection at 5000 miles.
+    - I had the 5K service performed a few weeks ago at Fort Bend Toyota please check your records!
+    - I have my truck serviced there
+    - my dad has his serviced closer to his house.
+    - I had my car serviced last month for the 6 month service,
+    - I did have the 5000 mile service done in early January.
+    - Serviced on January 6, 2021.
+    - I did get my 5000 mile oil change
+    - I used it a couple of months ago
+    - I already took my Camry to the Toyota garage for 5K service.
+    - I got it serviced at Toyota Victoria
+    - It's was already done at 10k. On 1/8/21
+    - we did do our 5k service at a different dealership that was closer to us.
+    - I actually did use it..
+    - I guess the service was done in the name of my wife Melissa Pizzi.
+    - I already had that done
+    - We had a complimentary oil change in December.
+    - I already did it two months ago.
+    - I already had 2 oil changes, thanks
+    - I already had the service.
+    - I believe it was Feb 20th for my first oil change
+    - Yes, I have . . . Had one free oil already
+    - I got it done at Don Mcgill of Katy.
+    - I did my 5000 with you guys in Dec.
+    - I have already serviced the vehicle with you guys already just a couple weeks ago.
+    - I took it to Community Toyota in Baytown on March 3.
+    - I believe she had it done there last time
+    - I did have my car serviced at 5,000 miles at Sterling McCall Ft Bend Toyota.
+    - I did first service already 5000+
+    - I already did my oil change
+    - I am done with my oil change
+    - The 5k service was done at another location... long story.
+    - Ok I got my tire rotated already!
+    - I completed the first maintenance for my Rav4 yesterday morning.
+    - I've had several services done at Fort Bend Toyota.
+    - The last-one was done last month.
+    - February 8th 2021 was the day service was done.
+    - Already done last Saturday Sterling McCall fort bent Toyota
+    - I already got it done
+    - Had service on 19th of this month.
+    - I already did my 1st maintenance last month at 5k miles you guys don't have a good data system
+    - I just had an oil change last week.
+    - Yes I already did that
+    - I've done my 5K service.
+    - I got my car care service done already . Thanks .
+    - if I already had my 5000 mile maintenance
+    - I already have my first maintenance appt in February.
+    - we already had our first scheduled maintenance
+    - We had it serviced about 2 weeks go.
+    - I already did the first service
+    - I already had it done about a month ago.
+    - I had the service all ready
+    - so I’ve already done the 5K service
+    - and did my scheduled maintenance through you guys about a month ago.
+    - and had it done a couple weeks ago.
+    - I did get an oil change fairly recently
+    - I'm getting my service done in Roswell, NM.
+    - I had my car serviced at Gene messer in the last couple of weeks..
+    - they rotated the tires.
+    - I've had the vehicle serviced at another dealership nearby.
+    - The complimentary service was already done.
+    - I already had my first service appointment
+    - we got our maintenance a few weeks ago with y'all
+    - I had oil change this pass weekend all set thank you
+    - done it today
+    - I had this service done about 2 weeks ago.
+    - I already did it like two months ago
+    - It has already been done
+    - I already did the 5K inspection
+    - I believe we already had the 5k service
+    - completed the 5 K service at your facility
+    - had that done a couple months ago
+    - I got it done few weeks ago
+    - I already got my oil change done.
+    - Would this be the same as when I took my car in for the oil change
+    - My truck has had its first maintenance
+    - I have already done the service here in Street Toyota in Amarillo
+    - 5K is done
+    - I already got my service done last month
+    - We already did the 3rd service
+    - I got one at the Toyota close to me
+    - That the car was serviced at
+    - I already got it serviced with you on Friday.
+    - I just got my vehicle serviced on Tuesday
+    - I already got maintenance in Elk Grove Toyota
+    - Already had the first maintenance
+    - What questions do you have about 1st scheduled maintenance
+    - done already 1st wk of May
+    - we already brought it in a few weeks ago for the 5000 K service
+    - I had an appointment for my 2016 RAV 4 this Sat at 11:15 that need to be
+    - I just completed the 5000 back in in Clovis NM will call
+    - had the Service Completed in early March
+    - It's already done
+    - My vehicle has been serviced at Midland Toyota under Christine Valles
+    - I had the 5k service last month
+    - I already had my 1st service May 8th
+    - But I already took it for the 5k service
+    - I've gotten it service about 5 times since getting it
+    - but I've already had an appointment with you guys
+    - It was an oil change
+    - I already brought it in to your shop for the 5k service
+    - We took it to the Toyota here already
+    - Hello, I received the 5,000 maintenance already
+    - I've already had the scheduled maintenance done
+    - Yes I got my 5k service done from a different store
+    - it wasn't covered under the first service
+    - I had the 5000 mile service on May 13th
+    - I had 5 K service
+    - I have already been in twice for oil change
+    - I did my 5k mile service here at Toyota Costa Mesa
+    - I got my maintenance done at a local dealership
+    - I have done this already
+    - I already did do my first check appointment
+    - I did my first-service
+    - already got the first-service done
+    - Already took-care-of this at FOWLER Toyota in Tulsa
+    - I have already had it serviced at had it
+    - Hi I have already took-it in for service
+    - I already did my first-maintenance
+    - I have gotten done already
+    - I already got my first-service
+    - I had this service completed a-couple weeks ago
+    - We just had service at your service department
+    - I had my first schedule service
+    - I had the Highlander in for its first-service a-couple weeks ago
+    - the maintenance has been done
+    - I already had it
+    - I did my first-maintenance servicing last Friday in the world Toyota branch
+    - I took-it for service last week
+    - The complimentary-service was done today
+    - However  I had the first-maintenance up there about a month ago
+    - Hi I took-it for service already last week
+    - I had my 5k-service completed this past Monday at Ira
+    - I just got my first-maintenance on Saturday
+    - I had the truck in your shop this last weekend for the 5k-maintenance
+    - you-guys already did the first one on March 18
+    - It went in for service last week
+    - I just got this done today at Toyota Toyota in City City which is only 15 miles from my house
+    - I received my first-service around February 26th
+    - I got my service done yesterday
+    - Hi Ana  we had our 1st-maintenance completed earlier this month
+    - I already got my 5000 inspection thankx
+    - We have had the 5000
+    - Y'all  already did my first one
+    - I did the 5000 one
+    - I just did my 5k-service I still need my alarm install
+    - I understand the maintenance was done at 4976 miles
+    - The Corolla already had It is 5k-service
+    - I had my first 5000 service
+    - U did my first maintanence two weeks ago
+    - We got the first-maintenance in Nashua  around 6000 miles
+    - I recently did my 10000 service
+    - That was done in Philly
+    - It already got a oil-change
+    - I did maintenance
+    - Service has been done
+    - Had one free oil already
+    - Yes I actually had my 1st free oil-change already
+    - I made first time maintenance on Jan
+    - I had my second maintenance last thursday at 10000
+    - I already took-it for 1st-maintenance last week
+    - general maintenance completed feb 22
+    - I did bring my car in for the first-maintenance visit the other week
+    - The last one was done last month
+    - completed my first-maintenance
+    - I just had the 5000 at Modesto  Toyota
+    - I had the 5K
+    - have already had both of those services performed
+    - the 10K service completed at South Coast  Toyota Toyota in
+    - I had my oil changed locally at 5K
+    - I got my 5k-service of Toyota of NEWMAN
+    - The 5k-service was completed
+    - I just got 10000 service May 24
+    - I did get my 5000 service done
+    - You did the 10000 already
+    - I've already gotten an oil-change done at Woburn  Toyota
+    - I did get my 5k-service done at Woburn  Toyota
+    - I had a service in April
+    - I got my 5000 done
+    - I had an appt in May
+    - The 5000-service was performed at Bristol on 5/11
+    - My service is done at falmouth Toyota
+    - I already had my first checkup
+    - 10K services have been completed by Team Toyota in
+    - Had all the services done in in
+    - My 10000 was done at 10000 at Toyota in
+    - I had my 5k-service done at a dealership in Columbia
+    - I have already performed my service
+    - i have performed my service
+    - service performed already
+    - done my service
+
+- intent: CANCEL_APPT
+  examples: |
+    - Cancel the appointment
+    - I want to cancel the appointment on May 5th at 11am.
+    - Hi I had to cancel my scheduled appointment on Thursday May 20
+    - I'm going to cancel today's appointment
+    - I will cancel my appt for Friday
+
+- intent: SETUP_APPT
+  examples: |
+    - I would like to schedule an appointment for my Vehicle.
+    - Can set this up for tomm
+    - Can we do this/that over the weekend.
+    - why-dont we do this sometime next week preferably on a friday?
+    - Can you schedule some time this evening to come in
+    - Can we schedule this for tomorrow at 5pm?
+    - I want to schedule an appointment for tomorrow to drop it off
+    - please schedule an appointment on Thursday morning at 8
+    - Lets schedule an appointment
+    - Can we do this over the weekend.
+    - Please arrange an appointment
+    - yes, you can arrange an appointment
+    - I would like to make an appointment
+    - I would like to set up an appointment
+    - I would like to setup an appointment
+    - I would like to set-up an appointment
+    - Can you set up an appointment
+    - Please get an appointment
+    - Please fix an appointment
+    - when can you fix an appointment
+    - Can you give me a date for an appointment
+    - you can set it up
+    - Please schedule
+    - did you schedule my appt ?
+    - However I have on my calendar to schedule a 5000 mile check in on or about April 10.
+    - I'd like to set that appointment for early April
+    - Let's set the appt
+    - I would like to get my oil change.
+    - if not, please schedule me for an oil change
+    - it ok to schedule me
+    - wants to schedule an appointment for March 16 at above location
+    - I would like to set up an appointment for 6 month maintenance on my 2020 RAV 4 for Monday the 15th at 1000
+    - We can do Saturday april17th
+    - Yes could you please schedule a service for me.
+    - can you let me know if my appt was scheduled or not ?
+    - Could I schedule the oil change toward the end of April.
+    - If that's the case, sure I would like to schedule.
+    - Can we schedule for next Saturday
+    - I do not need to schedule
+    - Lets do it Thursday at 3 in the afternoon please.
+    - I will schedule it.
+    - We can set one up for this Saturday in the morning
+    - We may need to make an appointment for April
+    - should I schedule with you for ToyotaCare plan service?
+    - Yes please schedule
+    - no I want you to schedule it on next wed at 3
+    - yes pls schedule my appointment
+    - Can you set up appt
+    - Sure let's schedule one
+    - yes you can schedule the appointment.
+    - Lets have it scheduled for thursday morning
+    - Will I be able to get the appointment done here?
+    - I need to schedule service
+    - I need to schedule a service appt.
+    - I am interested in scheduling maintenance
+    - And we need to schedule the first service.
+    - you can schedule around 8 in the morning on a week day
+    - we need to schedule the first service
+    - Please make an appointment in the morning of any day in May.
+    - Let's Scheduled closer to the due date.
+    - and would like to setup for Davis dealership
+    - Its in need of its 1st appointment
+    - and schedule for me.
+    - On my dashboard telling me it needs it already
+    - and can set up service for my Venza on Monday, May 10 or Friday, May 14.
+    - I will schedule when 5K maintenance.
+    - Can I bring my RAv 4 in for service now
+    - l looking appointment first time toyota corolla 2021
+    - you want to schedule me
+    - Please book my visit for June 18th at 8:00 AM
+    - I'll be scheduling my 10000 mile Service soon
+    - can we schedule it for the beginning of the week on like May 17 or 18th
+    - Hi am I able to schedule maintenance service at this time
+    - I can bring my Rav4 in for its first service on May 27, 28, June 1-3
+    - I will schedule a service appointment
+    - Can you help me schedule for Friday May 28th around 10:30
+    - Can I schedule after the baby is born
+    - schedule after the baby comes
+    - you'd like for me to bring the truck in
+    - I need to schedule it
+    - I can schedule for maintenance
+    - Yes please schedule an appointment
+    - can I schedule a oil change for today
+    - I will schedule an appointment
+    - Yes, please arrange it for me on the 20th
+    - you make an appointment
+    - 1st appointment in the morning on June 26th
+    - Who do I call about scheduling my first maintenance check for the RAV4
+    - I will schedule the service
+    - Yeah let's schedule it
+    - I'll schedule something for the end of June for tire rotation
+    - can you make the appointment like that ?
+    - did make an appointment for tomorrow at 11:00 AM.
+    - I would like to schedule maintenance services for the my Tocoma
+    - schedule an appointment
+    - I also need an inspection..
+    - I would-like-to schedule
+    - I need an appointment
+    - Ana pls schedule 4/29 10am
+    - Yes can-you make an appointment for next Saturday anytime
+    - Could we set it up for next week
+    - Request appt on 4/23 or 4/26
+    - can-i make a appoinment for my 1st-service
+    - Yes is-there any way I could schedule it for the 22nd of May
+    - can-you schedule me on a weekend please as my wife works during the week
+    - Hi ana  can-i schedule it for this Friday
+    - I do need-to set-up an appointment May
+    - would-like-to schedule service second week of May
+    - Yes can-we schedule next Saturday
+    - let-us schedule 10am on the 27th
+    - I have been meaning to schedule for a maintenance
+    - should-i still schedule one
+    - perhaps we should set something up in April as it will-be 6 months since purchase
+    - Sure can-you schedule this around next Thursday
+    - Yes let-us setup for next Tuesday
+    - can-we do-this next Thursday
+    - Who can I talk to about scheduling the tint that came with my car?
+    - but am wondering about scheduling the ceramic window tint
+    - I actually was waiting to hear from you guys about setting up an appointment for my window tinting I purchased
+    - Ok cool thanks I was hoping to get the windows tinted it came with the vehicle was wondering
+    - if I could schedule that
+    - Ok can-you schedule one for tomorrow
+    - Will need 5000 miles service soon
+    - I would like to schedule in August
+    - Please lets schedule for next saturday
+    - Yes I need-to book an appointment
+    - You can setup an appt
+    - Hi Ana  I would like to schedule service on June 21 or 23 in the morning
+    - Okay yes can-you also schedule a regular inspection for the same day as well
+    - schedule my next routine maintenance service
+    - can-i book an appointment in
+    - I am was planning on scheduling an appointment soon
+    - Please book for 6-9-21
+    - Yes sorry can-we schedule it
+    - I would like to schedule it
+    - Ok can you schedule it
+    - I was going to call the service department today.
+    - How do i set that up to get done?
+    - I also need to Schedule time for window tinting
+    - I want to schedule my appointment
+    - I want to setup my appointment
+    - I want to set up my appointment
+
+- intent: CHECK_AVAIL_TIMES
+  examples: |
+    - What times are available ?
+    - When are the appointments available ?
+    - When is the next appointment available ?
+    - Do you have available on saturday ?
+    - what time is available
+    - i don't know what time is available
+    - What time is available for you to come in
+    - when are you available to come in
+    - what time works best for you
+    - what time is convenient for you to come in
+    - what time is more convenient for you ?
+    - what time works for you ?
+    - When is a good time for you to come in ?
+    - when is a convenient time to come in
+    - when can you come in
+    - What time can you come to the store
+    - what time can you be at the store this evening ?
+    - What time works better for your schedule
+    - Can you tell me when might be a good time for you to come in
+    - What time today evening will work better for you  ?
+    - can you tell me what time in the evening will you be coming in ?
+    - When can you drop by the store ?
+    - Can you come in for a quick test drive ?
+    - Please let me know what time is available
+    - Is Thursday available
+    - What time do you have available
+    - Please let me know what time you have available
+    - What time is your latest appointment
+    - What time is your last appointment
+    - what is available
+    - What times do you have available
+    - How about 7pm tomorrow
+    - Do you have anything available for this Saturday
+    - What times do you have available for saturday
+    - what do you have available
+    - Can you tell me what's available please
+    - what times are available
+    - what times are available on saturday
+    - what time is good for you
+    - Can you tell what's available please
+    - Is there any availability for Friday March 9th?
+    - is there availability for this Friday morning?
+    - do you have any availability on friday
+    - Do you have anything available this coming Monday after 10:30 am?
+    - Send me a few available dates preferably morning.
+    - When is the earliest y'all have available?
+    - Any Saturday works between 10am-12
+    - Is this Saturday morning available?
+    - Would you also have appointment times available Saturday morning?
+    - What time do you have available next Wednesday?
+    - What is the latest appointment you have ?
+    - yes, and when to be the time for me to see you? thanks.
+    - whats the availability
+    - any time next week is fine
+    - yes, do you think i have for saturday
+    - do you have 10 am available ?
+    - What availability is there the 28th or 29th?
+    - Is there anything for later today?
+    - what times you have available?
+    - Do you have a Saturday available?
+    - tomorrow whats the earliest
+    - Are there any appointments available for next week?
+    - Yes can you make an appt for next Saturday anytime
+    - Do you have any availability this weekend?
+    - Anything in the afternoon?
+    - Do you have anything available for June 1st or June 2nd
+    - anytime after 12pm should work for me
+    - By the way any early slots available for tomorrow
+    - Is there an appointment available after 2pm on the 28th?
+    - What appointments are available the week of April 19th?
+    - Do you have available schedule for tomorrow for my 5k service
+    - If you have anything available Wednesday the 7th.
+    - What's the earliest?
+    - Is 3 pm available?
+    - Do you have Saturday appointments?
+    - What times do you have
+    - Do you have any availability on April 28 at 10 AM?
+    - Is it available April 14th
+    - do you have anything tomorrow ?
+    - What appointments are available the week of May 19th?
+    - Do you have any morning open after that around 9-10?
+    - Any Saturday times available?
+    - Hope one of those dates can work.
+    - When are their availabilities
+    - when you have 7am to 8AM
+    - whenever you want
+    - Are there any availabilities for the service for tomorrow
+    - When's your next availability?
+    - Is there an appointment available this weekend?
+    - What hours are you open tomorrow for service
+    - What is available for next monday morning
+    - What time is available for July 29th Saturday
+    - What appointment availability times do you have?
+    - Any available time
+    - What are the available times to bring the car in
+    - What are the earliest appointments you offer
+    - times do-you have available
+    - is the service available
+    - Could we do possibly a Saturday
+    - When you have available
+    - what-time is the latest appointment
+    - Do we have-anything available next week on Thursday
+    - is-it possible-to schedule for the other weekend
+    - would-you have any-time this week
+    - It is possible for me to get a later time on the same day
+    - is-there an opening for 11am on the 27th
+    - Any chance you have an opening this afternoon
+    - Do you-guys have service appointments on the weekends
+    - do-you have next saturday
+    - do-you have openings after 5
+    - you have-anything available Wednesday the 7th
+    - What appointments are available the week of April 19th
+    - you have one available today
+    - what-time would it be on May 27th
+    - you have-anything available for then
+    - Hi do-you have an appt for 26 26
+    - do-you have a Friday early
+    - Can you help me with an appointment to come in sooner?
+    - What dates are available?
+    - When are some available times to come-in
+    - What are the available day/time options
+    - Are Sundays available
+    - you-guys are available
+    - What morning times do-you have
+    - I may be coming to the cape this upcoming weekend tho do-you have openings for this weekend
+    - Are weekend appointments available
+    - time do you guys have available?
+    - What would be the earliest time available?
+
+- intent: STATUS_BUSY
+  examples: |
+    - I work on weekdays.
+    - I can’t make it on Saturday
+    - Sunday is not possible
+    - I am busy right now.
+    - This is not a good time.
+    - I am busy this week
+    - This week is really bad.
+    - I will be out of town
+    - Sorry, not available.
+    - I am not available to talk right now
+    - I am busy this week.
+    - I am not available this week.
+    - I am out of town.
+    - I am at work
+    - I will not be off work
+    - I will be at work
+    - I am at work right now
+    - can't talk.
+    - No I cant talk on the phone right now
+    - No calls please
+    - I cant do it right now
+    - I am out of town
+    - Sorry not available
+    - just been hectic at work.
+    - I won't be able to do then.
+    - i am busy right now
+    - The 10th won't work
+    - Hello I won't be able to make it in today so let's reschedule
+    - I will not be able to do a saturday morning appointment.
+    - I am off on Mondays
+    - Can't do tomorrow
+    - Morning, sorry don't think I'll make it today by 9
+    - I am not asking for today
+    - I would need-to check-with my work first
+    - We are on vacation this week
+    - I had some issues during the week
+    - It is a busy week
+    - I am away until may 15 I wil call
+    - Sorry I have-to work today
+    - I will-be working on 20th
+    - I had some business to do in the next 2 weeks please
+    - he leaves to work Thursday
+    - I will be out of town this month
+    - I have class at that time
+    - that's what I am busy with
+    - not this weekend bcos I am not-available
+    - I will not be able-to do 11:30 on Saturday
+    - I did not say I want an appointment for March 20th
+    - Thursday is not good
+    - I am on vacation this week.
+    - I am on vacation this monday.
+
+- intent: STATUS_AVAILABLE
+  examples: |
+    - I get off work by 8.
+    - I am not available on Thursdays
+    - Anytime is good for me
+    - Tomorrow morning works for me
+    - Today at 3pm works for me
+    - I am available
+    - I am free right-now
+    - I am off till Saturday or early Friday
+    - I get-off at 430
+    - I am available this coming Saturday
+    - I leave from my work at 1230
+
+- intent: PREFER_DATE
+  examples: |
+    - can we do saturday, lets do friday
+    - What about April 3rd
+    - Monday or Friday would be best .
+    - how about monday
+    - can we do it on saturday ?
+    - Thursday works for me
+    - any saturday is fine
+    - Is Saturday available?
+    - Lets do Tuesday instead then
+    - Ok, for this Saturday please.
+    - Let's do Friday your earliest
+    - Yes let's do next Friday
+    - Sure lets do next Friday
+    - Could you do that day?
+    - Yes please on a Saturday
+    - May 1st would work
+    - Can I schedule for Tuesday @3:00?
+    - Yes after 30th
+    - Can we look at the following week April 7 or later?
+    - Do you have any opening on April 24 th
+    - How about Monday, May 3rd?
+    - I can only do Friday or Saturday.
+    - I prefer Friday May 28
+    - Can i do it on Sunday please
+    - May 21 will work
+    - Does May 27th or 28th work?
+    - Yes can it be Scheduled for a Saturday?
+    - May 24th sounds good
+    - Yes can it be on a Friday please
+    - My car will be ready on 5/25 can you let me know please
+    - I have a grandson due around 14th
+    - I'll be free this Friday AM
+    - Could you do 830 on June 2
+    - Hi I am available on mondays
+    - 21st until I have time
+    - Let's do it tomorrow.
+    - Can you please schedule it on June 12th saturday
+    - I am asking for something on june 12th
+    - i could go that day
+    - Saturday June 12th would be perfect
+    - Alright how does the 29th sound
+    - is there any available sunday
+    - Can we set tomorrow for all
+    - I was there on monday the 17th.
+    - Do you schedule for Saturdays?
+    - Get back with me after June 1
+    - I'm getting my 2nd vaccine shot on Thurs
+    - Or is there anything for Thursday?
+    - I got my first service two days ago
+    - you have an early spot
+    - need to schedule on a Monday, Tuesday or Wednesday preferably.
+    - can-you do a Saturday
+    - can-we do on a Saturday
+    - Lets do-this on Saturday
+    - Ohhh I am sorry I meant April 17th
+    - I would-like-to try to bring it in 4/26 or 4/28
+    - Okay I can bring it in on a Monday or Tuesday
+    - Is Thursday good to have my 5000 check
+    - May 15 early when you open
+    - Hi can-i do my appointment for tomorrow
+    - can-i drop it off tomorrow
+    - I can only do-it on Saturday
+    - could-i do Wednesday
+    - Yes the 24th will-be fine
+    - You have-anything Monday
+    - anyday the week of May 19th is great
+    - May 3 11 or 12 is good-for-me
+    - Yes 21st is fine
+    - May 21st is good
+    - somewhere around May 22 would-be OK
+    - May 13th or May 20th would-be fine with me
+    - I meant Monday May 24th
+    - Next thursday should be good
+    - can-i do next Wednesday the 5th
+    - Is may 8th possible
+    - can take it tomorrow at any-time
+    - May 28th will-be good
+    - April 23 would-be good
+    - Yes June 12 could work for me
+    - could-i make the appointment for 8/3
+    - Can be saturday
+    - I'm sorry could it be on Tuesday instead
+
+- intent: PREFER_DATERANGE
+  examples: |
+    - can we do this next week
+    - can we do next week ?
+    - how about next week
+    - We can do it for the end of April
+    - Can I do it this week?
+    - as she will bring the highlander in at the end of the month.
+    - Will make appointment in May
+    - She will be in touch next week.
+    - Can we book something for may?
+    - make it for May 3-5 please
+    - We can do next week
+    - Hi I took it for service already last week
+    - can I take it sooner or till May?
+    - I'm off till Saturday or early Friday.
+    - A mid-day appointment would be great on any day of the week.
+    - Will need my second one in late May
+    - I need something after the first full week of june
+    - My daughter is scheduled to have her baby between June 14 and 21
+    - I also need an inspection in June
+    - could I combine that maintenance with the June inspection?
+    - We can come in June, right
+    - can I change the oil from tomorrow to today in Dallas
+    - so let's do something for the end of June
+    - Any day from June 25-29 works for me
+    - Oh I'll have to do it in the next 30 days
+    - which came into my possession in January 2022
+    - I may have side effects from this brand last for a few days.
+    - can l get appointment anytime for next month?
+    - can we do it anywhere on a Tuesday-Friday?
+    - I'll be busy Saturday-Monday
+    - Already completed last week
+    - Can I bring it this upcoming week?
+    - I actually just got my second service done this past weekend.
+    - may have to schedule another one soon
+    - I will get back to you this week
+    - Lets do next week
+    - can-i come this week
+    - can-i do-it this week
+    - could-i do an appointment for this week
+    - can-you look for something during the latter part of the week of the 17th
+    - plan on coming-in sometime in May being that would-be 6 months from the date of purchase
+    - May sounds good
+    - June would-be better
+    - Sure lets do-this next month
+    - I can stop by next month for an oil-change
+    - Next week will-be fine
+    - not-sure yet I will book closer to august
+    - I would do-it after the 4th
+    - Let's  do-it in Sept
+    - look at scheduling in July
+    - It needs to be after june 14
+    - was planning on July
+    - can-i schedule something at the beginning of July
+    - Be better in weekend -
+
+- intent: PREFER_TIME
+  examples: |
+    - Can we do this on saturday at noon
+    - We can do 1030
+    - 7:30 is great.
+    - how about 10
+    - lets shoot it for 10
+    - 4pm would work
+    - yes 11 am would be fine
+    - Lets do on 10th at 3pm
+    - Ok lets do 545 the.
+    - Can we do this at 7 in the evening
+    - Can you also do 5:30 next Monday?
+    - Let's do Wednesday at 6:30?
+    - can we do it at 3pm on Saturday ?
+    - we can do it at 3
+    - can we do Monday at 5?
+    - Let's go with 5pm on April 7.
+    - Good pm,Can you make me an appointment on Wednesday at 10am.
+    - Yes, I would prefer an appointment on March 26 around 10 am. Thank you!
+    - Can we do 11Am?
+    - How about 2:00?
+    - Can I do this Wednesday 8am drop off ?
+    - Yes the 29th at 7am would be amazing
+    - Any time works well for me.
+    - Anything Tuesday?
+    - Any day around 10:00 am
+    - but could it be around 4:30?
+    - First thing in the morning is fine How long is the wait time
+    - 3pm works with me!
+    - 10 am will work.
+    - Can I do the afternoon of the 29th
+    - Yes, will it be done by 930?
+    - Fridays around 10 am would work.
+    - Do you have anything for 12:30?
+    - Do you have 9:30 on 24th?
+    - Yes I would like to 04/14/21 At 11Am
+    - The earliest I could be there is 5:45
+    - How about April 20th at 11am?
+    - I can do Thursday, April 8th at 2:30
+    - 8 am would be good
+    - could we do 7:30?
+    - must leave at 4 pm as have doctor's appointment
+    - it will arrive at 1:30, right
+    - Could I do 9am
+    - 8:30 would be great
+    - if i need to go to river town i would need 12:30
+    - Saturday on 22 May between 10 to 12 noon Would be ideal or any other time will be fine
+    - I want to schedule for 1pm
+    - Will get back in 2-3 weeks.
+    - Could we please change the time to 2pm on June 19th?
+    - Saturday on 22 May between 10 to 12 noon Would be ideal
+    - What about 8:00
+    - For sure,I  can see u at the same time tomorrow,at 11:00 Am
+    - I mean 10:00am
+    - 8 am on on April 26 works fine for me
+    - It will have-to be on a Tue at 3:30
+    - 2 PM would would-be perfect
+    - Let’s do the 22 at 11
+    - anyday after 5/27 around 5pm
+    - Ok lets do 5:45 then
+    - Shall we do-it in the early morning hours around 7
+    - Could you get me in on Friday April 30th around 9AM
+    - then 7 am is is fine
+    - yes 8am for june 12th works for us
+    - It is at 1:15 this afternoon
+    - Ok how about 9 am ?
+
+
+- intent: PREFER_TIMERANGE
+  examples: |
+    - lets do this on fri evening
+    - April 7, after 12 would be good
+    - My wife said she can come first thing Monday morning 3/15/21
+    - how about morning
+    - Sure, I like saturday mornings, the earlier the better
+    - Anything weekend- friday afternoon or saturday morning
+    - Any time after 10am
+    - Yes please mon - thur after 2
+    - Maybe in the early morning or afternoon
+    - Be better in weekend- Friday afternoon or Saturday morning
+    - anytime between 10am to 12
+    - i would prefer early morning
+    - Anything in the morning would work
+    - How about in between 12 noon to 3 pm?
+    - Ok u can schedule me anytime during the week after 3
+    - Friday May 7, anytime in the morning will work
+    - I'd prefer to not do early morning,
+    - Can I do the afternoon of the 29th
+    - Have owned Toyota's since 1980
+    - So any day in May I would just need to drop off early in the morning or lunch.
+    - Lets do tomm morning at 9
+    - Any time after 11: it don't matter what day
+    - Within the next two week on a Thursday or Friday afternoon
+    - any Friday early afternoon works for me
+    - Please make this mid morning
+    - Need to schedule 5K for tomorrow May 25th at the latest time possible in the afternoon
+    - I'm coming in Monday morning
+    - Morning time is good for me
+    - I can drop it of Saturday the 22nd in the morning
+    - This Friday in the morning preferably
+    - I prefer to drop it off first thing in the morning!
+    - Any opening this afternoon or evening
+    - Tomorrow Sunday afternoon would be great
+    - before 9 will work for me.
+    - I prefer early morning
+    - anytime after 9 is fine
+    - Yes I would like a Saturday morning early
+    - I can do between 11 and 1
+    - Sure in the afternoon please
+    - Please can-you do-it on a Monday or Tuesday morning
+    - asap I can leave it in the morning
+    - Early in the morning would-be preferred
+    - This Wed can work after 1
+    - May 24 in the morning is fine
+    - I would-be able-to do-it after 1230 on the 21st
+    - is-there anything after 1230
+    - anytime between 10am - 1pm will work for me
+    - is-there anything-else in the afternoon
+    - I want from 8am anyday
+    - It is possible this Thursday after 12:00
+    - Afternoon would-be best
+    - can-i have appointment after noon
+    - A morning appointment works better
+
+- intent: STORE_VISIT
+  examples: |
+    - I am not ready to come-in yet
+    - Yes I can come tomorrow
+    - No I can not make-it
+    - Can I come tomorrow
+    - This afternoon I can go
+    - I can come this afternoon
+    - I can go this afternoon
+    - I can go tomorrow
+    - Why do not we do this on saturday
+    - I can go during my lunch break
+    - Tomorrow works for me
+    - i Can come Thursday
+    - After work I can come
+    - I can stop by after work
+    - I can go now
+    - I can go today
+    - I will be there this afternoon
+    - I can come now
+    - I am planning on coming in this evening
+    - I can come then
+    - can make it in next week
+    - I will be there in about 30 minutes
+    - I can be there in about 45 minutes
+    - I would be interested in coming-in
+    - I can only come in the evenings
+    - I work all day
+    - Will be there today
+    - I can come in the afternoon
+    - can not make it this week
+    - let me know if I can come at 5:30
+    - Ms Ana I can come in today. What time is good for you
+    - I want to come in today.
+    - I was thinking of coming in today
+    - when can i come today
+    - what time can i come today
+    - I'm supposed to come in once
+    - Ms Ana I can come in today.
+    - I was just in
+    - I was in @ 7k
+    - I have come for one
+    - then I'll be there Thursday at 12pm
+    - Ok, my husband will bring the car on Saturday at 8am.
+    - I am coming in next week on Thursday, April 1 at 10:30 am.
+    - So I will be there at the service right
+    - I will go to the dealership
+    - I'm suppose to be there this Saturday
+    - so I'll be in soon
+    - i was planning on coming down today
+    - How about dropping it off on the morning May 15th.
+    - I would like to bring in the car
+    - I will come to do my first maintenance
+    - I could come next Thursday
+    - I can come today
+    - Should we bring it in
+    - is-it possible-to drop-off
+    - I am about to go-in for my second
+    - Hi Ana  was planning on coming-in July for oil sticker
+    - I can bring it in on Thursday in the morning around 10
+    - do-i just drive up to the service center
+    - Planning on coming in tomorrow.
+    - I was planning on going in early this afternoon for the repair
+    - I'll pick them up on Saturday
+
+- intent: STORE_VISITED
+  examples: |
+    - Actually this Camry was at your dealership last Saturday for oil change!
+    - I came in last Saturday for my service.
+    - I brought my Highlander in last week for the 5000 mile check.
+    - I was there for the oil change
+    - Ana I brought my truck in at 6,000 miles.
+    - I was in there for complimentary service on Jan 11th.
+    - We were just in a week ago
+    - Ana I brought my truck at 6,000 miles.
+    - I brought it in, in March
+    - I CAME IN ON MONDAY APRIL 05, FOR MAINTENANCE
+    - I've brought my car in for the 5K inspection
+    - I have already had three visits
+    - I had my sequoia there April 5 at 8:00 for the 10,000 mileage oil change
+    - I went to the City City Toyota dealership
+    - I was-in a-few weeks back for the service
+    - I came-in on Monday for maintenance
+    - checked in 10 days ago in Folsom  Toyota
+    - already went 2 times for service
+    - Sorry to tell you that I came-in when I reach 5K miles
+    - I already have taken the car in for the 5k-service
+    - I was-in-there for complimentary-service on Jan 11th
+    - Hello I was-in for service on May 4th
+    - I did have to bring it back last week to correct the alignment on my tires because it was pulling
+    - We brought it to your service dept
+    - I've taken the highlander in twice for service already at 5k and 10k
+    - I went to get an oil change
+    - We did bring in our vehicle on Jan 22
+    - I went to the store
+    - I brought it in last month for the scheduled maintenance
+    - I had a scheduled visit last month for 5K miles
+    - I had a scheduled visit last month for 5K mile
+
